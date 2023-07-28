@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/download.jpg">
+  <link href="./style.css" rel="stylesheet"/>
+  <script src="./index.js"></script>
+  <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+<div class="header">
+  <img src="./images/logo.svg" alt="logo" class="logo-img"/>
+  <div class="score">
+    <div class="text-score">
+      SCORE
+    </div>
+    <div class="number-score" >
+      0
+    </div>
+  </div>
+</div>
+<div class="game">
+  <div class="hand paper">
+    <img src="./images/icon-paper.svg" alt="paper" class="paper-hand" onclick="pickHand('paper')" />
+  </div>
+  <div class="hand scissors">
+    <img src="./images/icon-scissors.svg" alt="scissors" class="scissors-hand" onclick="pickHand('scissors')"/>
+  </div>
+  <div class="hand rock">
+    <img src="./images/icon-rock.svg" alt="rock" class="rock-hand" onclick="pickHand('rock')"/>
+  </div>
+</div>
+<div class="result">
+  <div class="myChoice">
+    <h1 class="Upicked">YOU PICKED</h1>
+    <div class="hand-container">
+      <div class="paper-final">
+        <img src="./images/icon-paper.svg" alt="paper" class="paper-img-final" id="paper-result"/>
+      </div>
+    </div>
+  </div>
+  <div class="text-result">
+    <div class="decision"><h1 class="fResult" id="fResult">YOU WIN!</h1></div>
+    <button class="playAgain" onclick="restart()">PLAY AGAIN</button>
+  </div>
+  <div class="houseChoice">
+    <h1 class="Hpicked">HOUSE PICKED</h1>
+    <div class="hand-container">
+      <div class="paper-finalh">
+        <img src="./images/icon-paper.svg" alt="paper" class="paper-img-finalh" id="paper-result-comp" />
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="attribution"> 
+    Coded by <a href="https://www.linkedin.com/in/pratyush-sharma-121a79254/" target="_blank">Pratyush Sharma</a>.
+  </div>
+</body>
+</html>
